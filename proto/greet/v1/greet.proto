@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+// use buf managed mode 
+// option go_package = "pkg/proto";
+
+package greet.v1;
+
+
+service GreetService {
+  rpc Greet(GreetRequest) returns (GreetResponse) {}
+}
+
+message GreetRequest {
+  string name = 1;
+}
+
+message GreetResponse {
+  string greeting = 1;
+}
