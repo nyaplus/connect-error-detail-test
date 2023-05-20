@@ -266,12 +266,14 @@ func (r *Reflector) getAllExtensionNumbersOfType(fqn string) ([]int32, error) {
 		nums = append(nums, num)
 		return true
 	})
-	if len(nums) == 0 {
-		return nil, fmt.Errorf("no extensions for type %q", fqn)
-	}
 	sort.Slice(nums, func(i, j int) bool {
 		return nums[i] < nums[j]
 	})
+	if len(nums) == 0 {
+		if _, err := r.descriptorResolver.FindDescriptorByName(protoreflect.FullName(name)); err != nil {
+			return nil, err
+		}
+	}
 	return nums, nil
 }
 

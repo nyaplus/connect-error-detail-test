@@ -14,3 +14,6 @@ require (
 )
 
 require golang.org/x/text v0.9.0 // indirect
+
+// add
+replace github.com/bufbuild/connect-grpcreflect-go => github.com/2yanpath/connect-grpcreflect-go v0.0.0-20230520063326-4a4e4e6c3b8d
