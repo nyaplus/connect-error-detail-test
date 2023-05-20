@@ -2,7 +2,7 @@
 ## explicit; go 1.19
 github.com/bufbuild/connect-go
 github.com/bufbuild/connect-go/internal/gen/connectext/grpc/status/v1
-# github.com/bufbuild/connect-grpcreflect-go v1.0.1-0.20230515231402-7290a64c9d5a
+# github.com/bufbuild/connect-grpcreflect-go v1.0.1-0.20230515231402-7290a64c9d5a => github.com/2yanpath/connect-grpcreflect-go v0.0.0-20230520082900-b2b0457ba222
 ## explicit; go 1.19
 github.com/bufbuild/connect-grpcreflect-go
 github.com/bufbuild/connect-grpcreflect-go/internal/gen/go/connectext/grpc/reflection/v1
@@ -55,3 +55,4 @@ google.golang.org/protobuf/runtime/protoimpl
 google.golang.org/protobuf/types/descriptorpb
 google.golang.org/protobuf/types/known/anypb
 google.golang.org/protobuf/types/known/durationpb
+# github.com/bufbuild/connect-grpcreflect-go => github.com/2yanpath/connect-grpcreflect-go v0.0.0-20230520082900-b2b0457ba222
